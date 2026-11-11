@@ -1,3 +1,6 @@
 class XmlLoader:
-    def load(self, file):
-        return f"файл {file}.xml загружен" 
+    def __init__(self, file):
+        self.file = file
+
+    def load(self):
+        return f"файл - {self.file}.xml загружен"
