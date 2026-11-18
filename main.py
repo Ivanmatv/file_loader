@@ -3,8 +3,6 @@ from xml_loader import XmlLoader
 
 
 home_work = "домашняя_работа"
-json_loader = JsonLoader(home_work)
-xml_loader = XmlLoader(home_work)
+json_loader = JsonLoader()
+xml_loader = XmlLoader()
 
-print(json_loader.load())
-print(xml_loader.load())
