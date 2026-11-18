@@ -6,9 +6,9 @@ class JsonLoader(Loader):
         self.__file = ""
 
     def load(self) -> str:
-        return f"файл - {self.__file} загружен"
+        return f"файл - {self.__file} - загружен"
 
-    def serialize(self) -> None:
-        self.__file = self.__file +".json"
+    def serialize(self, file: str) -> None:
+        self.__file = file +".json"
 
 
